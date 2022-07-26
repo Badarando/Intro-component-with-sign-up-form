@@ -2,58 +2,135 @@
   background-color: hsl(0deg, 100%, 74%);
   background-image: url(../../images/bg-intro-mobile.png);
   background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
-.singup-page .singup-title {
+@media (min-width: 62.5rem) {
+  .singup-page {
+    background-image: url(../../images/bg-intro-desktop.png);
+    background-repeat: repeat;
+    background-size: contain;
+  }
+}
+.singup-page .singup-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  border: 1px solid red;
+}
+@media (min-width: 62.5rem) {
+  .singup-page .singup-intro {
+    width: 50%;
+    height: 50rem;
+    justify-content: center;
+  }
+}
+.singup-page .singup-intro .singup-title {
   margin-top: 5rem;
+  width: auto;
+  height: auto;
   text-align: center;
   color: #fff;
 }
-.singup-page .singup-paragraph {
+@media (min-width: 62.5rem) {
+  .singup-page .singup-intro .singup-title {
+    font-size: 3rem;
+    text-align: left;
+    width: 35rem;
+  }
+}
+.singup-page .singup-intro .singup-paragraph {
+  width: 20rem;
+  height: auto;
   text-align: center;
   line-height: 1.5rem;
   color: #fff;
 }
-.singup-page .singup-try {
+@media (min-width: 62.5rem) {
+  .singup-page .singup-intro .singup-paragraph {
+    text-align: justify;
+    width: 35rem;
+  }
+}
+.singup-page .singup-section {
+  width: 23.5rem;
+  height: 40rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section {
+    width: 50%;
+    height: 50rem;
+    justify-content: center;
+  }
+}
+.singup-page .singup-section .singup-try {
   width: 19rem;
   height: 5rem;
   border-radius: 0.6rem;
   background-color: hsl(248deg, 32%, 49%);
   box-shadow: 0rem 0.5rem 0px 1px rgba(0, 0, 0, 0.205);
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.singup-page .singup-try p {
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section .singup-try {
+    width: 36rem;
+    height: 4rem;
+  }
+}
+.singup-page .singup-section .singup-try p {
+  height: auto;
+  width: 15rem;
   color: #fff;
   text-align: center;
   line-height: 1.5rem;
 }
-.singup-page .singup-form {
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section .singup-try p {
+    width: 30rem;
+  }
+}
+.singup-page .singup-section .singup-form {
   width: 19rem;
-  height: 26rem;
+  height: 27.5rem;
   border-radius: 0.6rem;
-  border: 1px solid black;
+  box-shadow: 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.singup-page .singup-form form {
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section .singup-form {
+    width: 36rem;
+  }
+}
+.singup-page .singup-section .singup-form form {
   width: 16rem;
-  height: 21rem;
+  height: 18.5rem;
   margin-top: 1rem;
 }
-.singup-page .singup-form form .singup-form-input {
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section .singup-form form {
+    width: 30rem;
+  }
+}
+.singup-page .singup-section .singup-form form .singup-form-input {
   width: 14.8rem;
   height: 3rem;
-  margin: 0.8rem 0 0.8rem 0;
+  margin: 0.8rem 0 0.4rem 0;
   padding-left: 1rem;
   border-radius: 0.3rem;
   border: 1px solid hsl(246deg, 25%, 77%);
@@ -61,10 +138,51 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section .singup-form form .singup-form-input {
+    width: 28.5rem;
+  }
+}
+.singup-page .singup-section .singup-form form input[type=text]:focus {
+  border: 0.1rem solid #000 !important;
+}
+.singup-page .singup-section .singup-form .singup-form-btn {
+  width: 16rem;
+  height: 3rem;
+  background-color: hsl(154deg, 59%, 51%);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.1rem hsl(154deg, 79%, 32%);
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section .singup-form .singup-form-btn {
+    width: 30rem;
+  }
+}
+.singup-page .singup-section .singup-form p {
+  height: auto;
+  width: 15rem;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: hsl(246deg, 25%, 77%);
+}
+@media (min-width: 62.5rem) {
+  .singup-page .singup-section .singup-form p {
+    width: 30rem;
+  }
+}
+.singup-page .singup-section .singup-form p span {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 700;
+}
 
-@media (min-width: 23.5rem) {
-  body {
-    background-color: purple;
+@media (min-width: 62.5rem) {
+  .singup-page {
+    display: flex;
+    flex-direction: row;
   }
 }
 
