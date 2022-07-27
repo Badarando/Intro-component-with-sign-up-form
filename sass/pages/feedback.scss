@@ -1,4 +1,4 @@
-.singup-page {
+.feedback-page {
     background-color: $red;
     background-image: url(../../images/bg-intro-mobile.png);
     background-repeat: repeat;
@@ -16,7 +16,7 @@
         background-size: contain;
     }
 
-        .singup-intro {
+        .feedback-intro {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -31,7 +31,7 @@
                 justify-content: center;
             }
 
-                .singup-title {
+                .feedback-title {
                     margin-top: 5rem;
                     width: auto;
                     height: auto;
@@ -45,7 +45,7 @@
                     }
                 }
         
-                .singup-paragraph {
+                .feedback-paragraph {
                     width: 20rem;
                     height: auto;
                     text-align: center;
@@ -61,7 +61,7 @@
 
         }
         
-        .singup-section {
+        .feedback-section {
             width: 23.5rem;
             height: 40rem;
 
@@ -75,7 +75,7 @@
                 justify-content: center;
             }
 
-                .singup-try {
+                .feedback-try {
                     width: 19rem;
                     height: 5rem;
                     border-radius: .6rem;
@@ -107,9 +107,9 @@
                         }
                 }
         
-                .singup-form {
+                .feedback-form {
                     width: 19rem;
-                    height: 27.5rem;
+                    height: 35rem;
                     border-radius: .6rem;
                     box-shadow: 0 .7rem .1rem rgba(0, 0, 0, 0.2);
                     background-color: $white;
@@ -123,21 +123,20 @@
         
                         form {
                             width: 16rem;
-                            height: 18.5rem;
+                            height: 26rem;
                             margin-top: 1rem;
                             
                             @include desktop {
                                 width: 30rem;
                             }
         
-                                .singup-form-input {
+                                .feedback-form-input {
                                     width: 14.8rem;
                                     height: 3rem;
                                     margin: .8rem 0 .4rem 0;
                                     padding-left: 1rem;
                                     border-radius: .3rem;
                                     border: 1px solid $grayish-Blue;
-                                    visibility: visible;
         
                                     color: $dark-Blue;
                                     font-family: 'Poppins', sans-serif;
@@ -149,9 +148,14 @@
         
                                 }
 
-                                .singup-form-input.error {
+                                .feedback-form-input.error {
                                     border: 1px solid red;
-                                    margin-bottom: 1rem;
+                                    background-image: url(../../images/icon-error.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: 1.8rem;
+                                    background-position: 94% 50%;
+                                    
+                                    margin-bottom: 2.5rem;
                                 }
                                 
                                 input[type=text]:focus {
@@ -160,7 +164,7 @@
 
                             }
                         
-                        .singup-form-btn {
+                        .feedback-form-btn {
                             width: 16rem;
                             height: 3rem;
         
@@ -202,7 +206,7 @@
 }
 
 @include desktop {
-    .singup-page {
+    .feedback-page {
         display: flex;
         flex-direction: row;
     }

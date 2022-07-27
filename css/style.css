@@ -142,23 +142,9 @@
     width: 28.5rem;
   }
 }
-.singup-page .singup-section .singup-form form .singup-form-input-error {
-  width: 14.8rem;
-  height: 3rem;
-  margin: 0.8rem 0 0.4rem 0;
-  padding-left: 1rem;
-  border-radius: 0.3rem;
+.singup-page .singup-section .singup-form form .singup-form-input.error {
   border: 1px solid red;
-  background-image: url(../../images/icon-error.svg);
-  visibility: inherit;
-  color: hsl(249deg, 10%, 26%);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-}
-@media (min-width: 77.18rem) {
-  .singup-page .singup-section .singup-form form .singup-form-input-error {
-    width: 28.5rem;
-  }
+  margin-bottom: 1rem;
 }
 .singup-page .singup-section .singup-form form input[type=text]:focus {
   outline: 0.1rem solid hsl(249deg, 10%, 26%);
@@ -198,6 +184,199 @@
 
 @media (min-width: 77.18rem) {
   .singup-page {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.feedback-page {
+  background-color: hsl(0deg, 100%, 74%);
+  background-image: url(../../images/bg-intro-mobile.png);
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page {
+    background-image: url(../../images/bg-intro-desktop.png);
+    background-repeat: repeat;
+    background-size: contain;
+  }
+}
+.feedback-page .feedback-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23.5rem;
+  height: 20rem;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-intro {
+    width: 50%;
+    height: 50rem;
+    justify-content: center;
+  }
+}
+.feedback-page .feedback-intro .feedback-title {
+  margin-top: 5rem;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: #fff;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-intro .feedback-title {
+    font-size: 3rem;
+    text-align: left;
+    width: 35rem;
+  }
+}
+.feedback-page .feedback-intro .feedback-paragraph {
+  width: 20rem;
+  height: auto;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #fff;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-intro .feedback-paragraph {
+    text-align: justify;
+    width: 35rem;
+  }
+}
+.feedback-page .feedback-section {
+  width: 23.5rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section {
+    width: 50%;
+    height: 50rem;
+    justify-content: center;
+  }
+}
+.feedback-page .feedback-section .feedback-try {
+  width: 19rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+  background-color: hsl(248deg, 32%, 49%);
+  box-shadow: 0rem 0.5rem 0px 1px rgba(0, 0, 0, 0.205);
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section .feedback-try {
+    width: 36rem;
+    height: 4rem;
+  }
+}
+.feedback-page .feedback-section .feedback-try p {
+  height: auto;
+  width: 15rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5rem;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section .feedback-try p {
+    width: 30rem;
+  }
+}
+.feedback-page .feedback-section .feedback-form {
+  width: 19rem;
+  height: 35rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section .feedback-form {
+    width: 36rem;
+  }
+}
+.feedback-page .feedback-section .feedback-form form {
+  width: 16rem;
+  height: 26rem;
+  margin-top: 1rem;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section .feedback-form form {
+    width: 30rem;
+  }
+}
+.feedback-page .feedback-section .feedback-form form .feedback-form-input {
+  width: 14.8rem;
+  height: 3rem;
+  margin: 0.8rem 0 0.4rem 0;
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  color: hsl(249deg, 10%, 26%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section .feedback-form form .feedback-form-input {
+    width: 28.5rem;
+  }
+}
+.feedback-page .feedback-section .feedback-form form .feedback-form-input.error {
+  border: 1px solid red;
+  background-image: url(../../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-size: 1.8rem;
+  background-position: 94% 50%;
+  margin-bottom: 2.5rem;
+}
+.feedback-page .feedback-section .feedback-form form input[type=text]:focus {
+  outline: 0.1rem solid hsl(249deg, 10%, 26%);
+}
+.feedback-page .feedback-section .feedback-form .feedback-form-btn {
+  width: 16rem;
+  height: 3rem;
+  background-color: hsl(154deg, 59%, 51%);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.2rem 0.1rem hsl(154deg, 79%, 32%);
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section .feedback-form .feedback-form-btn {
+    width: 30rem;
+  }
+}
+.feedback-page .feedback-section .feedback-form p {
+  height: auto;
+  width: 15rem;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: hsl(246deg, 25%, 77%);
+}
+@media (min-width: 77.18rem) {
+  .feedback-page .feedback-section .feedback-form p {
+    width: 30rem;
+  }
+}
+.feedback-page .feedback-section .feedback-form p span {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 700;
+}
+
+@media (min-width: 77.18rem) {
+  .feedback-page {
     display: flex;
     flex-direction: row;
   }
