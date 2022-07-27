@@ -1,14 +1,14 @@
 .singup-page {
   background-color: hsl(0deg, 100%, 74%);
   background-image: url(../../images/bg-intro-mobile.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page {
     background-image: url(../../images/bg-intro-desktop.png);
     background-repeat: repeat;
@@ -19,11 +19,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 23.5rem;
   height: 20rem;
-  border: 1px solid red;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-intro {
     width: 50%;
     height: 50rem;
@@ -37,7 +36,7 @@
   text-align: center;
   color: #fff;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-intro .singup-title {
     font-size: 3rem;
     text-align: left;
@@ -51,7 +50,7 @@
   line-height: 1.5rem;
   color: #fff;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-intro .singup-paragraph {
     text-align: justify;
     width: 35rem;
@@ -60,12 +59,11 @@
 .singup-page .singup-section {
   width: 23.5rem;
   height: 40rem;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section {
     width: 50%;
     height: 50rem;
@@ -84,7 +82,7 @@
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section .singup-try {
     width: 36rem;
     height: 4rem;
@@ -97,7 +95,7 @@
   text-align: center;
   line-height: 1.5rem;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section .singup-try p {
     width: 30rem;
   }
@@ -112,7 +110,7 @@
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section .singup-form {
     width: 36rem;
   }
@@ -122,7 +120,7 @@
   height: 18.5rem;
   margin-top: 1rem;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section .singup-form form {
     width: 30rem;
   }
@@ -134,17 +132,36 @@
   padding-left: 1rem;
   border-radius: 0.3rem;
   border: 1px solid hsl(246deg, 25%, 77%);
+  visibility: visible;
   color: hsl(249deg, 10%, 26%);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section .singup-form form .singup-form-input {
     width: 28.5rem;
   }
 }
+.singup-page .singup-section .singup-form form .singup-form-input-error {
+  width: 14.8rem;
+  height: 3rem;
+  margin: 0.8rem 0 0.4rem 0;
+  padding-left: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid red;
+  background-image: url(../../images/icon-error.svg);
+  visibility: inherit;
+  color: hsl(249deg, 10%, 26%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media (min-width: 77.18rem) {
+  .singup-page .singup-section .singup-form form .singup-form-input-error {
+    width: 28.5rem;
+  }
+}
 .singup-page .singup-section .singup-form form input[type=text]:focus {
-  border: 0.1rem solid #000 !important;
+  outline: 0.1rem solid hsl(249deg, 10%, 26%);
 }
 .singup-page .singup-section .singup-form .singup-form-btn {
   width: 16rem;
@@ -156,7 +173,7 @@
   text-transform: uppercase;
   color: #fff;
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section .singup-form .singup-form-btn {
     width: 30rem;
   }
@@ -169,7 +186,7 @@
   text-align: center;
   color: hsl(246deg, 25%, 77%);
 }
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page .singup-section .singup-form p {
     width: 30rem;
   }
@@ -179,7 +196,7 @@
   font-weight: 700;
 }
 
-@media (min-width: 62.5rem) {
+@media (min-width: 77.18rem) {
   .singup-page {
     display: flex;
     flex-direction: row;

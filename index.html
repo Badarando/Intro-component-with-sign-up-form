@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -29,13 +29,20 @@
     
       <section class="singup-form">
           <form action="">
-            <input type="text" class="singup-form-input" id="fname" name="firstname" placeholder="First Name">
-            <input type="text" class="singup-form-input" id="lname" name="lastname" placeholder="Last Name">
-            <input type="text" class="singup-form-input" id="email" name="email" placeholder="Email Adress">
-            <input type="text" class="singup-form-input" id="pword" name="password" placeholder="Password">
+            <input type="text" class="singup-form-input" id="fname" name="firstname" value="" placeholder="First Name">
+            <input type="text" class="singup-form-input" id="lname" name="lastname" value="" placeholder="Last Name">
+            <input type="text" class="singup-form-input" id="email" name="email" value="" placeholder="Email Adress">
+            <input type="text" class="singup-form-input" id="pword" name="password" value="" placeholder="Password">
           </form>
-      
-          <button class="singup-form-btn">
+
+          <!-- <form action="">
+            <input type="text" class="singup-form-input-error" id="fname" name="firstname" value="">
+            <input type="text" class="singup-form-input-error" id="lname" name="lastname" value="" placeholder="Last Name">
+            <input type="text" class="singup-form-input-error" id="email" name="email" value="" placeholder="Email Adress">
+            <input type="text" class="singup-form-input-error" id="pword" name="password" value="" placeholder="Password">
+          </form>
+       -->
+          <button class="singup-form-btn" onclick="send()">
             Claim your free trial 
           </button>
       
@@ -52,5 +59,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
