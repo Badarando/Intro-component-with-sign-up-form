@@ -129,35 +129,35 @@
                             @include desktop {
                                 width: 30rem;
                             }
-        
-                                .singup-form-input {
-                                    width: 14.8rem;
-                                    height: 3rem;
-                                    margin: .8rem 0 .4rem 0;
-                                    padding-left: 1rem;
-                                    border-radius: .3rem;
-                                    border: 1px solid $grayish-Blue;
-                                    visibility: visible;
-        
-                                    color: $dark-Blue;
-                                    font-family: 'Poppins', sans-serif;
-                                    font-weight: 500;
-
-                                    @include desktop {
-                                        width: 28.5rem;
+                                    .singup-form-input-area {
+                                        .singup-form-input {
+                                            width: 14.8rem;
+                                            height: 3rem;
+                                            margin: .8rem 0 .4rem 0;
+                                            padding-left: 1rem;
+                                            border-radius: .3rem;
+                                            border: 1px solid $grayish-Blue;
+                                            visibility: visible;
+                
+                                            color: $dark-Blue;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-weight: 500;
+                                                
+                                            @include desktop {
+                                                width: 28.5rem;
+                                            }
+                                            
+                                        }
+                                        
+                                        .message {
+                                            display: none;
+                                        }
+                                        
+                                        input[type=text]:focus {
+                                            outline: .1rem solid $dark-Blue;
+                                        }
                                     }
-        
-                                }
-
-                                .singup-form-input.error {
-                                    border: 1px solid red;
-                                    margin-bottom: 1rem;
-                                }
-                                
-                                input[type=text]:focus {
-                                    outline: .1rem solid $dark-Blue;
-                                }
-
+                        
                             }
                         
                         .singup-form-btn {
@@ -194,6 +194,56 @@
                                     font-weight: 700;
                                 }    
                         }
+                }
+
+                .singup-form.error{
+                    width: 19rem;
+                    height: 27.5rem;
+                    border-radius: .6rem;
+                    box-shadow: 0 .7rem .1rem rgba(0, 0, 0, 0.2);
+                    background-color: $white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @include desktop {
+                        width: 36rem;
+                        height: 34rem;
+                    }
+
+                    form {
+                            width: 16rem;
+                            height: 18.5rem;
+                            margin-top: 2rem;
+                            
+                            @include desktop {
+                                width: 30rem;
+                                height: 23rem;
+                                margin-bottom: 1rem;
+                            }
+
+                            .singup-form-input-area.error {
+                                .singup-form-input.error{
+                                    border: 1px solid red;
+                                    background-image: url(../../images/icon-error.svg);
+                                    background-repeat: no-repeat;
+                                    background-size: 2rem;
+                                    background-position: 95% center;
+                                    margin-bottom: 0;
+                                    margin-top: .5rem;
+                                }
+
+                                .message.error {
+                                    display: block;
+                                    color: red;
+                                    text-align: right;
+                                    margin-top: 0;
+                                    font-style: italic;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-weight: 400;
+                                }
+                            }
+                    }
                 }
 
             }
