@@ -6,5 +6,5 @@ const pword = document.querySelector('#pword');
 console.log(name);
 
 function send() {
-    window.location.href = './feedback.html'
+    
 }
