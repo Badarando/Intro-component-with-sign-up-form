@@ -1,31 +1,44 @@
-const name = document.querySelectorAll('#fname');
-const lname = document.querySelectorAll('#lname');
-const email = document.querySelectorAll('#email');
-const pword = document.querySelectorAll('#pword');
+const name = document.querySelector('#fname');
+const lname = document.querySelector('#lname');
+const email = document.querySelector('#email');
+const pword = document.querySelector('#pword');
+
 const form = document.querySelector('.singup-form');
 const div = document.querySelector('.singup-form-input-area');
 const message = document.querySelector('.message');
-const input = document.querySelectorAll('input.singup-form-input');
+const input = document.querySelector('#input');
+
+const fnameBack = document.querySelectorAll('.fname');
+const lnameBack = document.querySelectorAll('.lname');
+const emailBack = document.querySelectorAll('.email');
+const pwordBack = document.querySelectorAll('.pword');
+
+
+
 
 function send(){ 
-   if(input.value = " "){
-      input.placeholder = " ";
+   if(name.value == ""){
+      name.placeholder = "";
       form.classList.add('error');
-      name.forEach( (content) => { content.classList.add('error')})
+      fnameBack.forEach( (content) => { content.classList.add('error')});
    }
-   // if(lname.value = " "){
-   //    form.classList.add('error');
-   //    lname.forEach( (content) => { content.classList.add('error')})
-   // }
-   // if(email.value = " "){
-   //    form.classList.add('error');
-   //    email.forEach( (content) => { content.classList.add('error')})
-   // }
-   // if(pword.value = " "){
-   //    form.classList.add('error');
-   //    pword.forEach( (content) => { content.classList.add('error')})
-   // }
 
-   console.log(input)
+   if(lname.value == ""){
+      lname.placeholder = "";
+      form.classList.add('error');
+      lnameBack.forEach( (content) => { content.classList.add('error')});
+   }
+   if(email.value == ""){
+      email.placeholder = "";
+      email.style.color = "hsl(0, 100%, 74%)"
+      email.value = "email@example/com"
+      form.classList.add('error');
+      emailBack.forEach( (content) => { content.classList.add('error')});
+   }
+   if(pword.value == ""){
+      pword.placeholder = "";
+      form.classList.add('error');
+      pwordBack.forEach( (content) => { content.classList.add('error')});
+   }
 
 }
