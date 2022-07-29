@@ -198,7 +198,7 @@
 
                 .singup-form.error{
                     width: 19rem;
-                    height: 27.5rem;
+                    height: 32rem;
                     border-radius: .6rem;
                     box-shadow: 0 .7rem .1rem rgba(0, 0, 0, 0.2);
                     background-color: $white;
@@ -213,7 +213,7 @@
 
                     form {
                             width: 16rem;
-                            height: 18.5rem;
+                            height: 22rem;
                             margin-top: 2rem;
                             
                             @include desktop {
@@ -238,9 +238,13 @@
                                     color: red;
                                     text-align: right;
                                     margin-top: 0;
+                                    margin-bottom: 0;
                                     font-style: italic;
                                     font-family: 'Poppins', sans-serif;
                                     font-weight: 400;
+                                    @include desktop {
+                                        margin-top: .5rem;
+                                    }
                                 }
                             }
                     }

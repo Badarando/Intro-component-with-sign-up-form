@@ -182,7 +182,7 @@
 }
 .singup-page .singup-section .singup-form.error {
   width: 19rem;
-  height: 27.5rem;
+  height: 32rem;
   border-radius: 0.6rem;
   box-shadow: 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -198,7 +198,7 @@
 }
 .singup-page .singup-section .singup-form.error form {
   width: 16rem;
-  height: 18.5rem;
+  height: 22rem;
   margin-top: 2rem;
 }
 @media (min-width: 77.18rem) {
@@ -222,9 +222,15 @@
   color: red;
   text-align: right;
   margin-top: 0;
+  margin-bottom: 0;
   font-style: italic;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+@media (min-width: 77.18rem) {
+  .singup-page .singup-section .singup-form.error form .singup-form-input-area.error .message.error {
+    margin-top: 0.5rem;
+  }
 }
 
 @media (min-width: 77.18rem) {
